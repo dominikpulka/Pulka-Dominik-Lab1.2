@@ -1,0 +1,37 @@
+body{
+    background-color:rgb(38, 104, 78)
+}
+#all{
+    width: 800px;
+    height: 800px;
+    margin: 0 auto;
+}
+#filters{    
+    border:rgb(223, 238, 7);
+    border-style: inset;
+    float: auto;       
+    width:184px;
+    height:36px;
+}
+img{
+    height: 30px;
+    display: block;
+    width: 30px;
+}
+a.blocks span{
+    display: none;    
+}
+a.blocks:hover span{
+    display: inline-block;
+    position:absolute;
+    background:rgb(255, 255, 255);
+    opacity: 90%;
+    font-style: inherit;
+}
+#area{
+    background-color: aliceblue;
+    position: relative;   
+}
+button{
+    background-color: rgb(61, 216, 236);
+}
