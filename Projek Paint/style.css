@@ -38,3 +38,31 @@ button{
 #test{
 
 }
+#black{
+    height: 20px;
+    width: 20px;
+    background-color: black;
+    border-style: double;
+    float: left;
+}
+#blue{
+    height: 20px;
+    width: 20px;
+    background-color: blue;
+    border-style: double;
+    float: left;
+}
+#red{
+    height: 20px;
+    width: 20px;
+    background-color: red;
+    border-style: double;
+    float: left;
+}
+#green{
+    height: 20px;
+    width: 20px;
+    background-color: green;
+    border-style: double;
+    float: left;
+}
