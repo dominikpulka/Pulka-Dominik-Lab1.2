@@ -1,5 +1,11 @@
 document.addEventListener('DOMContentLoaded', appStart)
 
+let canvas;
+let ctx;
+let movedown = fales;
+let more = "square";
+const color = drawcolor;
+
 function appStart(){
     canvas=document.querySelector('#area')
     document
