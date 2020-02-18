@@ -54,11 +54,11 @@ function draw() {
   }
 }
 
-let startBall = new Ball(0, 0, "black", "startBall");
+let startBall = new Ball(0, 700, "black", "startBall");
 startBall.drawBall();
 let finishBall = new Ball(650, 50, "blue", "finishBall");
 finishBall.drawBall();
-let myBall = new Ball(250, 250, "black", "myBall");
+let myBall = new Ball(450, 250, "black", "myBall");
 balls.push(myBall);
 balls.push(finishBall);
 
@@ -79,14 +79,14 @@ function moving(e) {
     let x2 = balls[p].posX;
     let y2 = balls[p].posY;
     let mid = parseInt(
-      Math.sqrt((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1))
+      Math.sqrt((x2 - x1 - 1) * (x2 - x1) + (y2 - y1) * (y2 - y1))
     );
 
     if (0 < mid && mid < 50 && balls[p].id != "finishBall") {
       ctx.font = "80px Arial";
       ctx.fillStyle = "gold";
       ctx.fillText("Game Over", canvas.width / 4, canvas.height / 2);
-      move = false;
+      move = false;    
 
       window.setTimeout(function() {
         location.reload();
