@@ -167,4 +167,15 @@ function paintingSquare()
 {
     mode = "square"
 }
-
+function black(){
+    pickedColor = 'black'
+}
+function blue(){
+    pickedColor = 'blue'
+}
+function red(){
+    pickedColor = 'red'
+}
+function green(){
+    pickedColor = 'green'
+}
