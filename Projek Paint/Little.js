@@ -7,30 +7,30 @@ let mode = "kwadrat"
 const color = pickedColor
 
 function appStart(){
-    canvas=document.querySelector('#area')
+    canvas=document.getElementById('area')
     document
-        .querySelector('#darken')
+        .getElementById('darken')
         .addEventListener('click',()=> darkenFiltr())
     document
-        .querySelector('#lighten')
+        .getElementById('lighten')
         .addEventListener('click',()=> lightenFiltr())
     document
-        .querySelector('#blur')
+        .getElementById('blur')
         .addEventListener('click',()=> blurFiltr())
     document
-        .querySelector('#negative')
+        .getElementById('negative')
         .addEventListener('click', ()=> negativeFiltr())
     /*document
         .querySelector('#test')
         .addEventListener('click',()=> testFiltr())*/
     document
-        .querySelector('#square')
+        .getElementById('square')
         .addEventListener('click', ()=>{
             painting()
             paintingSquare()  
         })
     document
-        .querySelector('#circle')
+        .getElementById('circle')
         .addEventListener('click', ()=>{
             painting()
             paintingCircle()
@@ -40,24 +40,24 @@ function appStart(){
         .addEventListener('click', ()=>{
             painting()
             paintingTriangle()
-        })*/    
+        })*/   
     document
-        .querySelector('#black')
+        .getElementById('black')
         .addEventListener('click', ()=> {
             black()
         })
     document
-        .querySelector('#blue')
+        .getElementById('blue')
         .addEventListener('click', ()=> {
             blue()
         })
     document
-        .querySelector('#red')
+        .getElementById('red')
         .addEventListener('click', ()=> {
             red()
         })
     document
-        .querySelector('#green')
+        .getElementById('green')
         .addEventListener('click', ()=> {
             green()
         })        
@@ -77,7 +77,6 @@ function darkenFiltr(amount = 30) {
         canvasData.data[i] -= amount
         canvasData.data[i+1] -= amount
         canvasData.data[i+2] -= amount
-        //canvasData.data[i+3] -= amount
     }
     ctx.putImageData(canvasData, 0, 0)
 }
@@ -151,7 +150,7 @@ function painting(){
                 ctx.beginPath()
                 ctx.arc(x, y, 15, 0, 2 * Math.PI)
                 ctx.fill()
-                ctx.fillStyle = pickedColor                
+                ctx.fillStyle = pickedColor               
             }
             else if (mode== "square"){
                 ctx.fillRect(x, y, 15, 15)
@@ -168,18 +167,4 @@ function paintingSquare()
 {
     mode = "square"
 }
-/*function paintingTriangle(){
-    mode = "triangle"
-}*/
-function black(){
-    pickedColor = 'black'
-}
-function blue(){
-    pickedColor = 'blue'
-}
-function red(){
-    pickedColor = 'red'
-}
-function green(){
-    pickedColor = 'green'
-}
+
