@@ -1,0 +1,46 @@
+body{
+    background: rgb(0, 128, 128);
+}
+textarea{
+    min-width: 400px;
+    min-height: 100px;
+    background: rgba(235, 243, 236, 0.829);
+    border-style: groove;
+    margin-bottom: 5px;   
+}
+#sticker{
+    margin-left: 40%;
+    width: 200px;
+    height: auto;
+    margin-bottom: 10px;
+    color: #ffff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#color{
+    width: 25px;
+    height: 25px;
+}
+#storage{
+    height: 100%;
+    width:  500px;
+}
+.title{
+    padding: 5px;
+    font-size: 24px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+.newDiv{
+float: left;
+padding: 5px;
+text-align: center;
+width: 50%;
+word-wrap: break-word;
+font-family: Apple Chancery, cursive;
+margin-left: 30px;
+margin-bottom: 10px;
+}
+.time{
+    font-size: 12px;
+}

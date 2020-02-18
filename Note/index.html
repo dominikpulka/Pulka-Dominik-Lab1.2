@@ -4,9 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Note</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div id="sticker">
+        <textarea id="title" placeholder="Title"></textarea>
+        <textarea id="content" placeholder="Content"></textarea>
+        <input type="color" value="#0000ff"  id="color">
+        <h4><input type="checkbox" id="pinnedNote">Pinned Note</h4>
+        <button id="addNoteBTN">Add Note</button>
+    </div>
+    <div id="storage"></div>
+    <script src="note.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
