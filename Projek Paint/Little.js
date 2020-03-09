@@ -35,6 +35,12 @@ function appStart(){
             painting()
             paintingCircle()
         })
+    document
+        .getElementById('rectangle')
+        .addEventListener('click',() => {
+            painting()
+            paintingRectangle()
+        })
     /*document
         .querySelector('#triangle')
         .addEventListener('click', ()=>{
@@ -153,7 +159,11 @@ function painting(){
                 ctx.fillStyle = pickedColor               
             }
             else if (mode== "square"){
-                ctx.fillRect(x, y, 15, 15)
+                ctx.fillRect(x, y, 30, 30)
+                ctx.fillStyle = pickedColor
+            }
+            else if (mode == "rectangle"){
+                ctx.fillRect(x, y, 30, 15)
                 ctx.fillStyle = pickedColor
             }
         }
@@ -166,6 +176,10 @@ function paintingCircle()
 function paintingSquare()
 {
     mode = "square"
+}
+function paintingRectangle()
+{
+    mode = "rectangle"
 }
 function black(){
     pickedColor = 'black'
